@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_santoni.mk
+    $(LOCAL_DIR)/revengeos_santoni.mk
 
 COMMON_LUNCH_CHOICES := \
-	arrow_santoni-userdebug \
-        arrow_santoni-user
+	revengeos_santoni-userdebug \
+        revengeos_santoni-user
