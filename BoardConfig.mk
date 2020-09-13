@@ -30,6 +30,8 @@ TARGET_TS_MAKEUP := true
 # Kernel
 TARGET_KERNEL_CONFIG := santoni_treble_defconfig
 TARGET_KERNEL_VERSION := 4.9
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := 12
 
 # Init
 TARGET_INIT_VENDOR_LIB         := libinit_santoni
@@ -40,8 +42,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_santoni
 VENDOR_SECURITY_PATCH := 2018-10-01
 
 # SELinux
-BOARD_SEPOLICY_DIRS += \
-    $(DEVICE_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+#    $(DEVICE_PATH)/sepolicy
 
 # Inherit the proprietary files
 include vendor/xiaomi/santoni/BoardConfigVendor.mk
