@@ -45,8 +45,9 @@
 #include "vendor_init.h"
 
 using android::base::GetProperty;
-using android::init::property_set;
-
+int property_set(const char *key, const char *value) {
+    return __system_property_set(key, value);
+}
 typedef struct {
     char const *heapstartsize;
     char const *heapgrowthlimit;
